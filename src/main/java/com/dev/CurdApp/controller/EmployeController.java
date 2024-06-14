@@ -34,6 +34,13 @@ public class EmployeController {
         return  ResponseEntity.ok(employe);
     }
 
+   @PutMapping("{id}")
+    public ResponseEntity<Employe> updateEmployee(@PathVariable long id,@RequestBody Employe employeDetails){
+            Employe updateEmployee = employeRepo.findById(id).orElseThrow();
+            employeRepo.save(updateEmployee);
+
+            return  ResponseEntity.ok(updateEmployee);
+        }
+    }
 
 
-}
