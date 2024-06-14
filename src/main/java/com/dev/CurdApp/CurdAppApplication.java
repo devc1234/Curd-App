@@ -28,9 +28,9 @@ public class CurdAppApplication implements CommandLineRunner {
 
 		Employe employe1 = new Employe();
 		employe1.setId(12);
-		employe1.setFirstname("rajjev");
+		employe1.setFirstname("dev");
 		employe1.setLastName("chavan");
-		employe1.setEmailId("rajeevgmail.com");
+		employe1.setEmailId("devgmail.com");
 		employeRepo.save(employe1);
 	}
 }
