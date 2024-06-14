@@ -24,4 +24,6 @@ public class EmployeController {
     public Employe createEmploye(@RequestBody Employe employe){
         return employeRepo.save(employe);
     }
+
+
 }
