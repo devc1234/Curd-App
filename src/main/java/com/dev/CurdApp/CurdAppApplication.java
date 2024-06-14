@@ -20,14 +20,14 @@ public class CurdAppApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Employe employe =new Employe();
-		employe.setId(12);
+		employe.setId(2);
 		employe.setFirstname("sneha");
 		employe.setLastName("chavan");
 		employe.setEmailId("sneha@gmail.com");
 		employeRepo.save(employe);
 
 		Employe employe1 = new Employe();
-		employe1.setId(12);
+		employe1.setId(1);
 		employe1.setFirstname("dev");
 		employe1.setLastName("chavan");
 		employe1.setEmailId("devgmail.com");
