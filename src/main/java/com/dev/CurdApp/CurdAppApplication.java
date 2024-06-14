@@ -21,9 +21,9 @@ public class CurdAppApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Employe employe =new Employe();
 		employe.setId(12);
-		employe.setFirstname("dev");
+		employe.setFirstname("sneha");
 		employe.setLastName("chavan");
-		employe.setEmailId("namdev@gmail.com");
+		employe.setEmailId("sneha@gmail.com");
 		employeRepo.save(employe);
 
 		Employe employe1 = new Employe();
